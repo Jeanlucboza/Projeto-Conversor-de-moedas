@@ -86,3 +86,123 @@ section{
     font-weight: 700;
     font-size: 20px;
 }
+/* Celulares muito pequenos (até 320px - ex: iPhone SE antigo) */
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 80px;
+    }
+    
+    main {
+        padding: 30px 16px 20px;
+    }
+    
+    select, input {
+        height: 44px;
+        font-size: 14px;
+        padding-left: 12px;
+    }
+    
+    button {
+        height: 44px;
+        font-size: 16px;
+    }
+    
+    .currency.value, .currency-value-to-convert {
+        font-size: 18px;
+    }
+}
+
+/* Celulares pequenos (321px até 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        padding: 15px;
+    }
+}
+
+/* Celulares médios e grandes (376px até 480px) */
+@media (min-width: 376px) and (max-width: 480px) {
+    main {
+        max-width: 400px;
+    }
+}
+
+/* Tablets (481px até 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .logo {
+        width: 120px;
+        margin: 30px auto;
+    }
+    
+    main {
+        max-width: 450px;
+        padding: 50px 30px 30px;
+    }
+    
+    section {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .arrow-img {
+        transform: rotate(-90deg); /* Seta aponta para direita */
+        margin: 0 20px;
+    }
+}
+
+/* Desktop (acima de 768px) */
+@media (min-width: 769px) {
+    body {
+        padding: 40px;
+    }
+    
+    .logo {
+        width: 130px;
+        margin: 30px auto;
+    }
+    
+    main {
+        max-width: 500px;
+        padding: 50px 40px 35px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    select, input {
+        height: 52px;
+        font-size: 17px;
+    }
+    
+    button {
+        height: 52px;
+        font-size: 19px;
+        transition: all 0.3s ease;
+    }
+    
+    button:hover {
+        opacity: 1;
+        background: #8b45e6;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(119, 47, 211, 0.3);
+    }
+    
+    section {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding: 25px;
+    }
+    
+    .arrow-img {
+        transform: rotate(-90deg);
+        margin: 0 25px;
+    }
+    
+    .currency.value, .currency-value-to-convert {
+        font-size: 24px;
+    }
+}
