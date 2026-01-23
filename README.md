@@ -13,11 +13,6 @@
 
 Aplicação web para conversão de moedas de forma rápida e intuitiva. Converta **Real Brasileiro** para diversas moedas internacionais com uma interface moderna e responsiva.
 
-## 📸 Preview
-
-<p align="center">
-  <img src="./assets/preview.png" alt="Preview do projeto" width="400">
-</p>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -63,4 +58,3 @@ O projeto possui um design moderno com:
 
 - Paleta de cores roxa como destaque
 
-## 📁 Estrutura de Pastas
